@@ -29,6 +29,7 @@ public class ToDoController {
         return toDoService.save(toDo);
     }
 
+    // We use the id in the PUT so that we know for a fact that the ToDo exists before trying to update it
     @PutMapping("/{id}")
     public ToDo update(@RequestBody ToDo toDo){
         return toDoService.save(toDo);
